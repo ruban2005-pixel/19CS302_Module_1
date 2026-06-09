@@ -1,35 +1,32 @@
-# EX 5 C program to calculate the total marks, average, and percentage of marks obtained in seven subjects.
+# EX 5C Write a C program to read a year and check whether the year is leap year or not using  if else
 ## DATE:
 ## AIM:
-To write a C program to calculate the total marks, average, and percentage of marks obtained in seven subjects.
+To write a program to read a year and check whether the year is leap year or not using  if else.
 
 ## Algorithm
-1. Start. 
-2. Declare three variable value of type int for marks. 
-3. Prompt the user to enter a value. 
-4. Read the value using scanf. 
-5. Find total and average. 
-6. Print the result 
-7. End.
+1.Start.
+2.Read the year value.
+3.Check if the year is divisible by 4 (year % 4 == 0).
+4.If true, display "Leap Year".
+5.Otherwise, display "Not a Leap Year".
+6.Stop.
 ## Program:
 ```
- 
-#include <stdio.h> 
-int main() { 
-    int sub1, sub2, sub3, total; 
-    float average; 
-    scanf("%d %d %d", &sub1,&sub2,&sub3); 
-    total = sub1 + sub2 + sub3; 
-    average = total / 3.0; 
-    printf("\nTotal : %d\n", total); 
-    printf("Average : %.2f\n", average); 
-    return 0; 
+#include <stdio.h>
+int main()
+{
+    int year;
+    scanf("%d", &year);
+     if(year%4 == 0)
+        printf("Leap Year");
+ else
+  printf("Not a Leap Year");
+          return 0;
 }
 ```
 
 ## Output:
-![image](https://github.com/user-attachments/assets/7cae4230-0e30-47e9-b08c-3d3374f398d8)
-
+<img width="825" height="348" alt="Screenshot 2026-06-08 134511" src="https://github.com/user-attachments/assets/b62a669b-88dd-411b-a8da-6ac75fb77263" />
 
 
 ## Result:
